@@ -1,3 +1,4 @@
+syntax="proto2";
 package vproto;
 
 message VMessage{
@@ -8,6 +9,6 @@ message VMessage{
     optional string transcript = 5;
     optional bytes audio = 6;
     repeated bytes attachments = 7;
-    required string time_sent = 8;
+    optional string time_sent = 8;
     optional string time_received = 9;
 }

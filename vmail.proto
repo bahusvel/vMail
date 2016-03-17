@@ -4,6 +4,8 @@ enum MessageType {
     AUTH_REQUEST = 1;
     AUTH_RESPONSE = 2;
     VMESSAGE = 3;
+    ERROR = 4;
+    PING = 5;
 }
 
 message VMailMessage{
@@ -13,4 +15,8 @@ message VMailMessage{
 
 message Error{
     required string text = 1;
+}
+
+message Ping{
+    required string timestamp = 1;
 }
